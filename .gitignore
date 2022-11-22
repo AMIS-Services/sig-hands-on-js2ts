@@ -1,0 +1,10 @@
+appsettings.json
+local.settings.json
+
+node_modules
+.npmrc
+.env
+
+out
+coverage
+junit.xml

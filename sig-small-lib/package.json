@@ -1,0 +1,42 @@
+{
+  "name": "@amis/eventgrid-lib",
+  "version": "1.0.0",
+  "description": "Eventgrid Support Library",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npx eslint --fix *.js",
+    "test": "npx jest --ci --reporters=default --reporters=jest-junit",
+    "doc": "jsdoc -c jsdoc.json index.js eventtopic.js"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "reporters": [
+      "default",
+      "jest-junit"
+    ]
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Amis",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@azure/eventgrid": "^4.9.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "eslint": "^8.19.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.5.3",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "jest": "^28.1.2",
+    "jest-junit": "^14.0.0"
+  },
+  "directories": {
+    "test": "test"
+  }
+}

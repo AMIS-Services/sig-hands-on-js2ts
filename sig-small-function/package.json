@@ -1,0 +1,55 @@
+{
+  "name": "report-handler",
+  "version": "1.0.0",
+  "description": "Handles Service report messages from topic",
+  "scripts": {
+    "start": "func start",
+    "pretest": "npx eslint --fix \"**/*.js\"",
+    "test": "npx jest --ci --reporters=default --reporters=jest-junit --detectOpenHandles",
+    "doc": "jsdoc -c jsdoc.json reportHandler/index.js"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
+    "watchPathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ],
+    "setupFiles": [
+      "dotenv/config"
+    ]
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "base-64": "^1.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "eslint": "^8.21.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.8.2",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "jest": "^28.1.3",
+    "jest-junit": "^14.0.0",
+    "nock": "^13.2.9"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Amis",
+  "license": "UNLICENSED"
+}
