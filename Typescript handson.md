@@ -25,4 +25,5 @@ Convert this Function to TypeScript.
 -	How could we do API calls from TypeScript. Is there a TypeScript library available for node-fetch or are there better alternatives?
 -	The unit test is implemented with Jest. How would we mock an incoming EventGrid event? How would our (mocked) Azure Context object look like in TypeScript? 
 -	There are several fixed schemas in the code. (Incoming event structure, outgoing POST body, returning response body). How could TypeScript help in supporting and enforcing this schemas in the code?
+-   Do not forget to update the project language for Azure functions from JavaScript to TypeScript in .vscode/settings.json
 
